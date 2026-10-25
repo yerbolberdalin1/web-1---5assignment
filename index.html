@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 5 — JavaScript Basics</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>Assignment 5 — JavaScript Basics</h1>
+
+    <section id="profile-section">
+      <h2>Profile</h2>
+      <div id="profile-output">
+        <p>Name: <span id="profile-name"></span></p>
+        <p>Birth year: <span id="profile-year"></span></p>
+        <p>Developer: <span id="profile-developer"></span></p>
+        <p>Age: <span id="profile-age"></span></p>
+        <p>Months (age × 12): <span id="profile-months"></span></p>
+      </div>
+    </section>
+
+    <section id="form-section">
+      <h2>Update profile</h2>
+      <form id="profile-form">
+        <label for="username">Username</label>
+        <input id="username" name="username" type="text" required>
+
+        <label for="birth-year">Birth Year</label>
+        <input id="birth-year" name="birthYear" type="number" min="1" required>
+
+        <button type="submit">Create / Update Profile</button>
+      </form>
+    </section>
+
+    <section id="hobbies-section">
+      <h2>Hobbies</h2>
+      <ul id="hobby-list"></ul>
+
+      <label for="hobby-input">New hobby</label>
+      <input id="hobby-input" type="text">
+      <button id="add-item" type="button">Add Item</button>
+      <button id="remove-item" type="button">Remove Item</button>
+    </section>
+  </main>
+</body>
+</html>
